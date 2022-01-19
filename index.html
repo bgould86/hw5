@@ -5,10 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!-- font -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!-- font -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <!-- style sheet -->
   <link rel="stylesheet" href="./assets/style.css" />
   <title>Work Day Scheduler</title>
 </head>
@@ -21,20 +25,104 @@
   </header>
   <div class="container">
     <!-- Timeblocks go here -->
-    <div class="row">
+    <!-- hour 1 -->
+    <div class="row js-row" id="hour9">
       <!-- time -->
       <div class="col-1">9am</div>
       <!-- task -->
-      <textarea class="col-10">Learn About Cats</textarea>
+      <textarea class="col-10 js-task time-color" data-hour="9"></textarea>
       <!-- save button -->
-      <button class="btn col-1">✅</button>
+      <button class="btn col-1 js-saveBtn saveBtn"><i class="far fa-save"></i></button>
+    </div>
+
+    <!-- hour 2 -->
+    <div class="row" id="hour10">
+      <!-- time -->
+      <div class="col-1">10am</div>
+      <!-- task -->
+      <textarea class="col-10 js-task time-color" data-hour="10"></textarea>
+      <!-- save button -->
+      <button class="btn col-1 js-saveBtn saveBtn"><i class="far fa-save"></i></button>
+    </div>
+
+    <!-- hour 3 -->
+    <div class="row" id="hour11">
+      <!-- time -->
+      <div class="col-1">11am</div>
+      <!-- task -->
+      <textarea class="col-10 js-task time-color" data-hour="11"></textarea>
+      <!-- save button -->
+      <button class="btn col-1 js-saveBtn saveBtn"><i class="far fa-save"></i></button>
+    </div>
+
+    <!-- hour 4 -->
+    <div class="row" id="hour12">
+      <!-- time -->
+      <div class="col-1">12pm</div>
+      <!-- task -->
+      <textarea class="col-10 js-task time-color" data-hour="12"></textarea>
+      <!-- save button -->
+      <button class="btn col-1 js-saveBtn saveBtn"><i class="far fa-save"></i></button>
+    </div>
+
+    <!-- hour 5 -->
+    <div class="row" id="hour13">
+      <!-- time -->
+      <div class="col-1">1pm</div>
+      <!-- task -->
+      <textarea class="col-10 js-task time-color" data-hour="13"></textarea>
+      <!-- save button -->
+      <button class="btn col-1 js-saveBtn saveBtn"><i class="far fa-save"></i></button>
+    </div>
+
+    <!-- hour 6 -->
+    <div class="row" id="hour14">
+      <!-- time -->
+      <div class="col-1">2pm</div>
+      <!-- task -->
+      <textarea class="col-10 js-task time-color" data-hour="14"></textarea>
+      <!-- save button -->
+      <button class="btn col-1 js-saveBtn saveBtn"><i class="far fa-save"></i></button>
+    </div>
+
+    <!-- hour 7 -->
+    <div class="row" id="hour15">
+      <!-- time -->
+      <div class="col-1">3pm</div>
+      <!-- task -->
+      <textarea class="col-10 js-task time-color" data-hour="15"></textarea>
+      <!-- save button -->
+      <button class="btn col-1 js-saveBtn saveBtn"><i class="far fa-save"></i></button>
+    </div>
+
+    <!-- hour 8 -->
+    <div class="row" id="hour16">
+      <!-- time -->
+      <div class="col-1">4pm</div>
+      <!-- task -->
+      <textarea class="col-10 js-task time-color" data-hour="16"></textarea>
+      <!-- save button -->
+      <button class="btn col-1 js-saveBtn saveBtn"><i class="far fa-save"></i></button>
+    </div>
+
+    <!-- hour 9 -->
+    <div class="row" id="hour17">
+      <!-- time -->
+      <div class="col-1">5pm</div>
+      <!-- task -->
+      <textarea class="col-10 js-task time-color" data-hour="17"></textarea>
+      <!-- save button -->
+      <button class="btn col-1 js-saveBtn saveBtn"><i class="far fa-save"></i></button>
     </div>
 
   </div>
 
+  <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Moment -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src=./assets/script.js></script>
+  <!-- javascript -->
+  <script src="./assets/script.js"></script>
 </body>
 
 </html>
