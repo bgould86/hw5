@@ -1,5 +1,3 @@
-// global variables
-
 // functions
 // save tasks to local storage
 function saveTask() {
@@ -10,7 +8,7 @@ function saveTask() {
 
   localStorage.setItem(time, task);
 }
-
+//change colors based on current time
 function timeColorChange() {
   const now = moment().hours();
   $(".time-color").each(function () {
@@ -31,7 +29,7 @@ function timeColorChange() {
 $("#currentDay").text(moment().format("dddd, MMMM Do, YYYY"));
 
 // retrieve tasks from local storage
-function localStoreHour() {
+function getScheduleFromLocalStoreage() {
   let hoursForScheduling = [9, 10, 11, 12, 13, 14, 15, 16, 17];
   for (i = 0; i < hoursForScheduling.length; i++) {
     $(`${"#hour" + hoursForScheduling[i]} .js-task`).val(localStorage.getItem(`${"hour" + hoursForScheduling[i]}`));
@@ -41,4 +39,4 @@ function localStoreHour() {
 // user clicks save button
 $(".js-saveBtn").on("click", saveTask);
 timeColorChange();
-localStoreHour();
+getScheduleFromLocalStoreage();
